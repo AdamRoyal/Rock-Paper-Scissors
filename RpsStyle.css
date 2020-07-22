@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #4682B4;
+    --light-color: #B0C4DE;
+    --dark-color: #5F9EA0;
+    --other-color: #B0E0E6;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, #4682B4, #FFF);
+    text-align: center;
+    margin-top: 3rem;
+    line-height: 1.6rem;
+}
+
+.title {
+    font-size: 55px;
+}
+
+.restart {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background: var(--primary-color);
+    color: #FFF;
+}
+.restart:hover {
+    cursor: pointer;
+    background: #FFF;
+    color: var(--primary-color);
+}
+
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1.5rem;
+    font-size: 25px;
+}
+
+.score p:first-child {
+    background: #FFF;
+    color: var(--primary-color);
+    margin-left: 2rem;
+    padding: 0.5rem;
+}
+
+.score p:last-child {
+    background: var(--primary-color);
+    color: #FFF;
+    margin-right: 2rem;
+    padding: 0.5rem;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1.5rem;
+}
+
+#rock:hover {
+    color: #FFF;
+    cursor: pointer;
+}
+
+#paper:hover {
+    color: #B0C4DE;
+    cursor: pointer;
+}
+
+#scissors:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .choice {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  .choice {
+    font-size: 80px;
+  }
+}
